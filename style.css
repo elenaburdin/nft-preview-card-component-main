@@ -1,0 +1,92 @@
+:root {
+    --primary-color-soft-blue: hsl(215, 51%, 70%);
+    --primary-color-cyan: hsl(178, 100%, 50%);
+    --neutral-color-main-bg-blue: hsl(217, 54%, 11%);
+    --neutral-color-card-bg-blue: hsl(216, 50%, 16%);
+    --neutral-color-line-blue: hsl(215, 32%, 27%);
+    --neutral-color-white: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 1440px;
+    background: var(--neutral-color-main-bg-blue);
+    color: var(--neutral-color-white);
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Outfit, sans-serif;
+}
+
+span {
+    color: var(--neutral-color-white);
+}
+
+
+.content {
+    background: var(--neutral-color-card-bg-blue);
+    width: 35vh;
+    height: 100%;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.content .item {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.title:hover,
+span:hover {
+    color: var(--primary-color-cyan);
+    cursor: pointer;
+
+}
+
+
+.content .logo {
+    width: 10%;
+    height: 10%;
+    border: var(--neutral-color-white) 1px solid;
+    border-radius: 50%;
+}
+
+.content .title {
+    font-size: 0.8rem;
+}
+
+.content .text {
+    font-size: 0.95rem;
+}
+
+
+.source {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1.4rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info p {
+    margin-left: 5px;
+}
+
+.color-soft-blue {
+    color: var(--primary-color-soft-blue);
+    font-weight: 300;
+}
+
+.color-cyan {
+    color: var(--primary-color-cyan);
+    font-weight: 600;
+}
+
+.author {
+    border-top: var(--neutral-color-line-blue) 1px solid;
+}
